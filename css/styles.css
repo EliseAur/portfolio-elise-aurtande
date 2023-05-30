@@ -1,0 +1,24 @@
+/* @import "imports/variables.css";
+@import "imports/typography.css";
+@import "imports/layout.css"; */
+
+:root {
+    --text-color: #fff;
+    --background-color: #000;
+    --orange-color: #eec559;
+    --background-color-grey-dark: #d2d2d2;
+    --background-color-grey-light: #f0f0f0;
+    --theme-red-color: #763438;
+    --theme-blue-color: #1f3741;
+    --regular-text: "tablet-gothic-wide", sans-serif;
+    --headings-text: "tablet-gothic-condensed", sans-serif;
+    --links-text: "tablet-gothic", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.nav-menu a {
+    font-family: var(--regular-text);
+}
