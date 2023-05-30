@@ -1,0 +1,15 @@
+:root {
+    /* Color */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-orange: #eec559;
+    --color-grey-dark: #d2d2d2;
+    --color-grey-light: #f0f0f0;
+    --color-red: #763438;
+    --color-blue: #1f3741;
+
+    /* Fonts */
+    --font-regular: "tablet-gothic-wide", sans-serif;
+    --font-headings: "tablet-gothic-condensed", sans-serif;
+    --font-links: "tablet-gothic", sans-serif;
+}

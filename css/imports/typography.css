@@ -1,3 +1,31 @@
-.nav-menu {
-    font-family: var(--regular-text);
+.logo,
+.font-headings-text,
+h1,
+h2,
+h3 {
+    font-family: var(--font-headings);
+}
+
+.cta,
+a {
+    font-family: var(--font-links);
+}
+
+.nav-menu a,
+p {
+    font-family: var(--font-regular);
+}
+
+.font-headings-text {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+article a,
+.current,
+.nav-menu a:hover {
+    text-decoration: underline;
 }
