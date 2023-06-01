@@ -1,5 +1,109 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+img {
+    width: 100%;
+}
+
+nav a {
+    display: block;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    padding: 25px 10px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 29px;
+    right: 31px;
+}
+
+.fa-times {
+    display: none;
+}
+
+nav,
+#menu-checkbox,
+#close-menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    width: 100%;
+    display: block;
+}
+
+#menu-checkbox:checked ~ nav a {
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.text a {
+    display: block;
+}
+
+/* Padding, margin, borders */
+section {
+    margin: 0 auto;
+}
+
+.boxes {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.top-level,
+.second-level {
+    padding: 10px 0;
+}
+
+.second-level p {
+    margin: 10px 0;
+}
+
+.cta {
+    padding: 10px 60px;
+    border-radius: 25px;
+}
+
+.cta-box,
+article {
+    margin: 20px 0;
+}
+
+.my-projects .cta-box {
+    padding: 20px 0 0;
+}
+
+.my-projects p {
+    padding: 10px 0 15px;
+}
+
+article .text {
+    padding: 10px;
+}
+
+.text a {
+    padding: 5px 0;
+}
+
+article {
+    border-radius: 25px;
+}
+
+article img {
+    border-radius: 25px 25px 0 0;
 }

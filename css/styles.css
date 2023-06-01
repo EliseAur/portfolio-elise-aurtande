@@ -4,11 +4,13 @@
 
 /* BACKGROUND COLORS */
 body,
-.my-projects .cta {
+.my-projects .cta,
+header,
+.nav-menu {
     background-color: var(--color-black);
 }
 
-.about .cta {
+.about-text .cta {
     background-color: var(--color-orange);
 }
 
@@ -22,16 +24,18 @@ article {
 
 /* TEXT COLOR */
 body,
-header a {
+header a,
+.fa-github {
     color: var(--color-white);
 }
 
-.about .cta,
+.about-text .cta,
 .my-projects,
 .my-projects a {
     color: var(--color-black);
 }
 
-.my-projects .cta {
+.my-projects .cta,
+nav a {
     color: var(--color-white);
 }

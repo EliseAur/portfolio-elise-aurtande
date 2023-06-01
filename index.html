@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio test</title>
+        <script src="https://kit.fontawesome.com/fc6e350578.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/ubl2skc.css" />
         <link href="css/styles.css" rel="stylesheet" />
         <!-- <link href="css/index.css" rel="stylesheet" />
@@ -19,6 +20,7 @@
             <label for="menu-checkbox" class="hamburger-icon" tabindex="0"><i class="fas fa-bars"></i></label>
             <!-- <input type="checkbox" id="close-menu-checkbox" />
             <label for="close-menu-checkbox" class="close-icon" tabindex="0"><i class="fas fa-times"></i><label> -->
+            <!-- <i class="fas fa-times"></i> -->
             <nav>
                 <div class="nav-menu">
                     <a href="#projects">Projects</a>
@@ -28,42 +30,57 @@
             </nav>
         </header>
         <main>
-            <section class="about">
-                <div class="about-text">
-                    <div class="about top-level">
+            <section class="">
+                <div class="boxes about-image">
+                    <img src="images/image-of-me-with-text-cropped-small.png" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" />
+                </div>
+                <div class="boxes about-text">
+                    <div class="top-level">
                         <p>Studying to become a</p>
                         <h1 class="font-headings-text">front-end developer</h1>
                         <p>at Noroff School of Technology and Digital Media</p>
                     </div>
-                    <div class="about second-level">
+                    <div class="second-level">
                         <p>I live in Oslo, I am educated as a teacher in science and mathematics and have been teaching in secondary school for the last ten years.</p>
                         <p>Now I am excited about getting new skills in front- end development and I am hoping to work with this fulltime soon.</p>
                     </div>
-                    <a href="#projects" class="cta">Projects</a>
-                </div>
-                <div class="about-image">
-                    <img src="images/image-of-me-with-text-cropped-small.png" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" />
+                    <div class="cta-box">
+                        <a href="#projects" class="cta">Projects</a>
+                    </div>
                 </div>
             </section>
             <section class="my-projects">
-                <h2>My projects</h2>
-                <article>
-                    <div><img src="images/Viken-Weiby-CabinLife-screenshot-home.jpg" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" /></div>
-                    <div>
-                        <h3>Project Exam 1</h3>
-                        <p>I live in Oslo, I am educated as a teacher in science and mathematics and have been teaching in secondary school for the last ten years. Now I am excited about getting new skills in front-end development and I am hoping to work with this fulltime soon.</p>
-                        <div>
-                            <a href="#">Link to GitHub</a>
-                            <a href="#">Link to live site</a>
+                <div class="boxes">
+                    <h2>My projects</h2>
+                    <article>
+                        <div><img src="images/Viken-Weiby-CabinLife-screenshot-home.jpg" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" /></div>
+                        <div class="text">
+                            <h3>Project Exam 1</h3>
+                            <p>I live in Oslo, I am educated as a teacher in science and mathematics and have been teaching in secondary school for the last ten years. Now I am excited about getting new skills in front-end development and I am hoping to work with this fulltime soon.</p>
+                            <div>
+                                <a href="#">Link to GitHub</a>
+                                <a href="#">Link to live site</a>
+                            </div>
                         </div>
+                    </article>
+                    <div class="cta-box">
+                        <a href="#top" class="cta">Back to top</a>
                     </div>
-                </article>
-                <a href="#top" class="cta">Back to top</a>
+                </div>
             </section>
             <section class="contact">
-                <h2>Contact</h2>
-                <p><span>Email</span>elise.aurtande@hotmail.com</p>
-                <p><span>GitHub</span>Link</p>
+                <div class="boxes">
+                    <h2>Contact</h2>
+                    <p>
+                        <span><i class="fa-solid fa-at"></i> </span>
+                        <span>elise.aurtande@hotmail.com</span>
+                    </p>
+                        
+                    </div>
+                         
+                    </p>
+                    <a href="#"><i class="fa-brands fa-github"></i> Check out my GitHub</a>
+                </div>
             </section>
         </main>
     </body>
