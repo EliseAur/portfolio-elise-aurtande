@@ -44,6 +44,12 @@ nav a {
     color: var(--color-white);
 }
 
+nav a:hover,
+nav a:focus {
+    background: var(--color-orange);
+    color: var(--color-black);
+}
+
 .hamburger,
 nav a,
 .logo,
@@ -55,4 +61,10 @@ nav a,
 .about-me,
 .contact {
     scroll-margin-top: 89px;
+}
+
+/*testing */
+
+.show {
+    display: block;
 }

@@ -58,12 +58,6 @@ nav a {
     transition: 0.5s;
 }
 
-nav a:hover,
-nav a:focus {
-    font-weight: bolder;
-    font-size: 1.7em;
-}
-
 /* Padding, margin, borders */
 section {
     margin: 0 auto;
@@ -97,7 +91,7 @@ h2 {
 }
 
 .cta {
-    padding: 10px 60px;
+    padding: 10px 60px 13px;
     border-radius: 25px;
     width: 180px;
     box-sizing: border-box;
@@ -137,13 +131,14 @@ article img {
     height: 800px;
 }
 
-.contact p {
+.contact-box {
     margin: 20px 0;
+    display: flex;
 }
 
 .github-link,
 .email {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /* article */
