@@ -131,6 +131,10 @@ article img {
     background-color: black;
 }
 
+.contact {
+    height: 800px;
+}
+
 .contact p {
     margin: 20px 0;
 }

@@ -52,6 +52,7 @@ nav a,
 }
 
 .my-projects,
-.about-me {
+.about-me,
+.contact {
     scroll-margin-top: 89px;
 }
