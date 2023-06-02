@@ -8,7 +8,8 @@ h3 {
 }
 
 .cta,
-a {
+a,
+.email {
     font-family: var(--font-links);
 }
 
@@ -44,13 +45,16 @@ h2 {
     font-size: 1.6em;
 }
 
-.text a {
+.text a,
+.email,
+.github-link {
     font-size: 1.1em;
 }
 
 /* Font styles/decoration */
 
-.font-headings-text {
+.font-headings-text,
+h2 {
     text-transform: uppercase;
 }
 
