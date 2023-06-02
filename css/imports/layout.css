@@ -99,6 +99,8 @@ h2 {
 .cta {
     padding: 10px 60px;
     border-radius: 25px;
+    width: 180px;
+    box-sizing: border-box;
 }
 
 .cta-box {

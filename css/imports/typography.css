@@ -47,8 +47,14 @@ h2 {
 
 .text a,
 .email,
-.github-link {
+.github-link,
+.top-level p,
+.second-level p {
     font-size: 1.1em;
+}
+
+.cta {
+    font-size: 1.2em;
 }
 
 /* Font styles/decoration */
