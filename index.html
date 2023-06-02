@@ -8,29 +8,23 @@
         <script src="https://kit.fontawesome.com/fc6e350578.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/ubl2skc.css" />
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- <link href="css/index.css" rel="stylesheet" />
-        <link href="css/media.css" rel="stylesheet" /> -->
     </head>
     <body>
         <header>
             <div class="logo">
                 <a href="index.html">Elise Aurtande</a>
             </div>
-            <input aria-label="menu" type="checkbox" id="menu-checkbox" />
-            <label for="menu-checkbox" class="hamburger-icon" tabindex="0"><i class="fas fa-bars"></i></label>
-            <!-- <input type="checkbox" id="close-menu-checkbox" />
-            <label for="close-menu-checkbox" class="close-icon" tabindex="0"><i class="fas fa-times"></i><label> -->
-            <!-- <i class="fas fa-times"></i> -->
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
             <nav>
                 <div class="nav-menu">
-                    <a href="#projects">Projects</a>
-                    <a href="#about">About</a>
+                    <a href="#my-projects">Projects</a>
+                    <a href="#about-me">About</a>
                     <a href="#contact">Contact</a>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="">
+            <section class="about-me" id="about-me">
                 <div class="boxes about-image">
                     <img src="images/image-of-me-with-text-cropped-small.png" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" />
                 </div>
@@ -45,11 +39,11 @@
                         <p>Now I am excited about getting new skills in front- end development and I am hoping to work with this fulltime soon.</p>
                     </div>
                     <div class="cta-box">
-                        <a href="#projects" class="cta">Projects</a>
+                        <a href="#my-projects" class="cta cta-projects">Projects</a>
                     </div>
                 </div>
             </section>
-            <section class="my-projects">
+            <section class="my-projects" id="my-projects">
                 <div class="boxes">
                     <h2>My projects</h2>
                     <article>
@@ -68,20 +62,19 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="boxes">
                     <h2>Contact</h2>
                     <p>
                         <span><i class="fa-solid fa-at"></i> </span>
                         <span>elise.aurtande@hotmail.com</span>
                     </p>
-                        
-                    </div>
-                         
+                    <p>
+                        <a href="#"><i class="fa-brands fa-github"></i> Check out my GitHub</a>
                     </p>
-                    <a href="#"><i class="fa-brands fa-github"></i> Check out my GitHub</a>
                 </div>
             </section>
         </main>
+        <script src="js/index.js" type="module"></script>
     </body>
 </html>

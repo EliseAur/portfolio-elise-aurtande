@@ -12,8 +12,7 @@ nav a {
     display: block;
 }
 
-/* HEADER */
-
+/* HEADER and navigation */
 header {
     position: sticky;
     left: 0;
@@ -21,7 +20,12 @@ header {
 }
 
 .logo {
-    padding: 25px 10px;
+    padding: 25px 10px 25px 15px;
+}
+
+.logo a {
+    position: relative;
+    top: 5px;
 }
 
 .hamburger-icon {
@@ -30,28 +34,34 @@ header {
     right: 31px;
 }
 
-.fa-times {
-    display: none;
+.hamburger {
+    position: absolute;
+    top: 29px;
+    right: 31px;
+    background: 0;
+    border: 0;
+    color: white;
+    font-size: 2em;
 }
 
-nav,
-#menu-checkbox,
-#close-menu-checkbox {
+nav {
     display: none;
-}
-
-#menu-checkbox:checked ~ nav {
     width: 100%;
-    display: block;
+    position: absolute;
+    background-color: var(--color-black-opacity);
+    height: 1000px;
 }
 
-#menu-checkbox:checked ~ nav a {
+nav a {
     padding: 20px 25px;
     text-align: center;
+    transition: 0.5s;
 }
 
-.text a {
-    display: block;
+nav a:hover,
+nav a:focus {
+    font-weight: bolder;
+    font-size: 1.7em;
 }
 
 /* Padding, margin, borders */
@@ -63,6 +73,14 @@ section {
     max-width: 400px;
     margin: 0 auto;
     padding: 15px;
+}
+
+.about-me {
+    padding-bottom: 20px;
+}
+
+.about-image {
+    padding: 0 0 0 10px;
 }
 
 .top-level,
@@ -102,8 +120,16 @@ article .text {
 
 article {
     border-radius: 25px;
+    border: 5px solid var(--color-black);
 }
 
 article img {
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
+    background-color: black;
+}
+
+/* article */
+
+.text a {
+    display: block;
 }

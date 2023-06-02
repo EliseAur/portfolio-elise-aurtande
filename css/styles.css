@@ -5,9 +5,12 @@
 /* BACKGROUND COLORS */
 body,
 .my-projects .cta,
-header,
-.nav-menu {
+header {
     background-color: var(--color-black);
+}
+
+.nav {
+    background-color: var(--color-black-opacity);
 }
 
 .about-text .cta {
@@ -19,13 +22,14 @@ header,
 }
 
 article {
-    background-color: var(--color-grey-light);
+    background-color: var(--color-white);
 }
 
 /* TEXT COLOR */
 body,
 header a,
-.fa-github {
+.fa-github,
+.contact a {
     color: var(--color-white);
 }
 
@@ -38,4 +42,16 @@ header a,
 .my-projects .cta,
 nav a {
     color: var(--color-white);
+}
+
+.hamburger,
+nav a,
+.logo,
+.cta {
+    cursor: pointer;
+}
+
+.my-projects,
+.about-me {
+    scroll-margin-top: 89px;
 }

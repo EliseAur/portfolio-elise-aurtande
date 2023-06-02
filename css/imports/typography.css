@@ -27,7 +27,6 @@ nav a {
 }
 
 .hamburger-icon,
-.fa-times,
 .fa-github,
 .fa-at {
     font-size: 2em;
@@ -61,6 +60,7 @@ a {
 
 article a,
 .current,
+.contact a,
 .nav-menu a:hover {
     text-decoration: underline;
 }
