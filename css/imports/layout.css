@@ -105,8 +105,13 @@ h2 {
     padding: 20px 0 0;
 }
 
-.my-projects p {
-    padding: 10px 0 15px;
+.my-projects p,
+article ul {
+    padding: 10px 0;
+}
+
+article ul {
+    margin-left: 25px;
 }
 
 article .text {
@@ -145,4 +150,10 @@ article img {
 
 .text a {
     display: block;
+}
+
+.all-projects-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }

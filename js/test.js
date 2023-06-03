@@ -1,53 +1,103 @@
 // function changeHamburger() {
-//     const hamburgerButton = document.querySelector(".hamburger");
-//     const hamburgerIcon = document.querySelector(".hamburger i");
-//     const navBar = document.querySelector("nav");
-//     const navLink = document.querySelectorAll(".nav-menu a");
+//     const width = window.innerWidth;
+//     if (width < 810) {
+//         const hamburgerButton = document.querySelector(".hamburger");
+//         const hamburgerIcon = document.querySelector(".hamburger i");
+//         const navBar = document.querySelector("nav");
+//         const navMenu = document.querySelector(".nav-menu");
+//         const toggleMenu = () => {
+//             hamburgerIcon.classList.toggle("fa-times");
+//             navBar.classList.toggle("show");
+//         };
 
-//     const toggleMenu = () => {
-//         hamburgerIcon.classList.toggle("fa-times");
+//         hamburgerButton.addEventListener("click", toggleMenu);
 
-//         if ((hamburgerIcon.classList.contains = "fa-times")) {
-//             navBar.style.display = "block";
-//         } else {
-//             navBar.style.display = "none";
-//         }
-
-//         navBar.classList.toggle("show");
-//         if (navBar.classList != "show") {
-//             navBar.style.display = "none";
-//         }
-//     };
-
-//     hamburgerButton.addEventListener("click", toggleMenu);
-
-//     navLink.forEach((link) => {
-//         link.addEventListener("click", () => {
-//             toggleMenu();
+//         navMenu.addEventListener("click", (event) => {
+//             if (event.target.matches(".nav-menu a")) {
+//                 toggleMenu();
+//             }
 //         });
-//     });
+//     }
 // }
 
-// changeHamburger();
+// window.onresize = changeHamburger;
+
+// function changeHamburger() {
+//     const width = window.innerWidth;
+
+//     if (width < 810) {
+//         const hamburgerButton = document.querySelector(".hamburger");
+//         const hamburgerIcon = document.querySelector(".hamburger i");
+//         const navBar = document.querySelector("nav");
+//         const navMenu = document.querySelector(".nav-menu");
+
+//         const toggleMenu = () => {
+//             hamburgerIcon.classList.toggle("fa-times");
+//             navBar.classList.toggle("show");
+//         };
+
+//         hamburgerButton.addEventListener("click", toggleMenu);
+
+//         navMenu.addEventListener("click", (event) => {
+//             if (event.target.matches(".nav-menu a")) {
+//                 toggleMenu();
+//             }
+//         });
+//     } else {
+//         // Remove the hamburger menu functionality if the window width is greater than or equal to 810 pixels
+//         const hamburgerButton = document.querySelector(".hamburger");
+//         hamburgerButton.removeEventListener("click", toggleMenu);
+//         hamburgerButton.style.display = "none";
+
+//         const navMenu = document.querySelector(".nav-menu");
+//         navMenu.removeEventListener("click", (event) => {
+//             if (event.target.matches(".nav-menu a")) {
+//                 toggleMenu();
+//             }
+//         });
+//         navMenu.style.display = "grid";
+//     }
+// }
+
+// window.onresize = changeHamburger;
 
 function changeHamburger() {
+    const width = window.innerWidth;
     const hamburgerButton = document.querySelector(".hamburger");
-    const hamburgerIcon = document.querySelector(".hamburger i");
-    const navBar = document.querySelector("nav");
-    const navMenu = document.querySelector(".nav-menu");
 
-    const toggleMenu = () => {
-        hamburgerIcon.classList.toggle("fa-times");
-        navBar.classList.toggle("show");
-    };
+    if (width < 810) {
+        hamburgerButton.style.display = "block";
+        const hamburgerIcon = document.querySelector(".hamburger i");
+        const navBar = document.querySelector("nav");
+        const navMenu = document.querySelector(".nav-menu");
 
-    hamburgerButton.addEventListener("click", toggleMenu);
+        const toggleMenu = () => {
+            hamburgerIcon.classList.toggle("fa-times");
+            navBar.classList.toggle("show");
+        };
 
-    navMenu.addEventListener("click", (event) => {
-        if (event.target.matches(".nav-menu a")) {
-            toggleMenu();
-        }
-    });
+        hamburgerButton.addEventListener("click", toggleMenu);
+
+        navMenu.addEventListener("click", (event) => {
+            if (event.target.matches(".nav-menu a")) {
+                toggleMenu();
+            }
+        });
+
+        // navMenu.style.display = "none"; // Hide the navigation menu
+    } else {
+        const hamburgerButton = document.querySelector(".hamburger");
+        hamburgerButton.style.display = "none"; // Hide the hamburger button
+
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.removeEventListener("click", (event) => {
+            if (event.target.matches(".nav-menu a")) {
+                toggleMenu();
+            }
+        });
+        navMenu.style.display = "grid"; // Display the navigation menu as a grid
+    }
 }
 
-changeHamburger();
+window.addEventListener("DOMContentLoaded", changeHamburger); // Run the function on page load
+window.addEventListener("resize", changeHamburger); // Run the function on window resize

@@ -1,0 +1,45 @@
+@media (min-width: 809px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav {
+        display: block;
+        height: 89.2px;
+        grid-column: 2;
+    }
+
+    .nav-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nav-menu a {
+        padding: 30px 0;
+        height: 89.2px;
+        box-sizing: border-box;
+    }
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-image {
+        grid-column: 2;
+        max-width: 800px;
+        padding-top: 20px;
+    }
+
+    .about-text {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .my-projects .boxes {
+        max-width: 800px;
+    }
+
+    .all-projects-box {
+        flex-direction: row;
+    }
+}

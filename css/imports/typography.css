@@ -15,7 +15,8 @@ a {
 .nav-menu a,
 p,
 .email,
-.github-link {
+.github-link,
+article ul {
     font-family: var(--font-regular);
 }
 
@@ -33,7 +34,8 @@ nav a {
 }
 
 .fa-github,
-.fa-at {
+.fa-at,
+.fa-linkedin {
     font-size: 2.8em;
 }
 
