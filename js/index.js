@@ -26,9 +26,9 @@ function createHTML(posts) {
     posts.forEach(function (post) {
         postContainer.innerHTML += `
             <article>
-                <div>
-                    <img src="${post.better_featured_image.source_url}" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" />
-                </div>
+            <div class="image" style="background-image: url('${post.better_featured_image.source_url}')">
+            </div>
+                
                 <div class="text">
                          <h3>${post.title.rendered}</h3>
                          ${post.content.rendered}
@@ -36,6 +36,10 @@ function createHTML(posts) {
             </article>`;
     });
 }
+
+// {/* <div>
+//                     <img src="${post.better_featured_image.source_url}" alt="Image of me with yellow background and text that says CODE, LEARNING, DESIGN, CREATIVITY." class="" />
+//                 </div> */}
 
 // {/* <article>
 //                 <div>

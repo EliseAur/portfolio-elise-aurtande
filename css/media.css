@@ -1,3 +1,9 @@
+@media (min-width: 420px) {
+    article .image {
+        height: 287.5px;
+    }
+}
+
 @media (min-width: 809px) {
     header {
         display: grid;
@@ -38,11 +44,77 @@
         justify-content: center;
     }
 
+    .my-projects {
+        padding-top: 30px;
+    }
+
     .my-projects .boxes {
         max-width: 800px;
     }
 
     .all-projects-box {
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact .boxes {
+        max-width: 1000px;
+    }
+
+    .contact-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    nav a:hover {
+        background: var(--color-black);
+        color: var(--color-orange);
+}
+
+@media (min-width: 1200px) {
+    .all-projects-box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .my-projects .boxes {
+        max-width: 1200px;
+    }
+
+    .about-me {
+        padding-bottom: 75px;
+    }
+
+    .my-projects h2 {
+        text-align: center;
+    }
+
+    .my-projects .cta-box {
+        width: 220px;
+        margin: 20px auto;
+    }
+
+    .font-headings-text {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+
+    .about-text {
+        max-width: 500px;
+    }
+
+    .contact .boxes {
+        max-width: 1200px;
+    }
+
+    .contact-links {
+        gap: 80px;
+        margin: auto;
+        max-width: 927px;
+    }
+
+    .contact h2 {
+        text-align: center;
     }
 }

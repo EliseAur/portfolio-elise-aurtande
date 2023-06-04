@@ -83,3 +83,25 @@ article a,
 .nav-menu a:hover {
     text-decoration: underline;
 }
+
+.p-one,
+.font-headings-text {
+    line-height: 1;
+}
+
+.p-two {
+    line-height: 1.5;
+}
+
+.email:hover,
+.github-link:hover {
+    /* text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2rem; */
+    color: var(--color-orange);
+}
+
+.contact-box a:hover,
+.contact-box a i:hover {
+    color: var(--color-orange);
+}
