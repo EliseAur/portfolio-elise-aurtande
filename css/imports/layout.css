@@ -92,9 +92,22 @@ h2 {
 
 .cta {
     padding: 10px 60px 13px;
-    border-radius: 25px;
     width: 180px;
     box-sizing: border-box;
+}
+
+.wp-block-button__link {
+    padding: 10px 35px;
+}
+
+.cta,
+article,
+.wp-block-button__link {
+    border-radius: 25px;
+}
+
+article {
+    box-shadow: 0 0 3px 3px #0000003b;
 }
 
 .cta-box {
@@ -118,14 +131,9 @@ article .text {
     padding: 10px;
 }
 
-.text a {
+/* .text a {
     padding: 5px 0;
-}
-
-article {
-    border-radius: 25px;
-    /* border: 5px solid var(--color-black); */
-}
+} */
 
 article .image {
     border-radius: 20px 20px 0 0;
@@ -162,4 +170,15 @@ article .image {
 .all-projects-box {
     display: grid;
     gap: 25px;
+}
+
+.wp-block-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+    width: 271px;
+}
+
+.wp-block-group {
+    height: 50px;
 }

@@ -77,7 +77,8 @@ a {
     text-decoration: none;
 }
 
-article a,
+article a:hover,
+.cta:hover,
 .current,
 .contact a,
 .nav-menu a:hover {

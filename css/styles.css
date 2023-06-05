@@ -5,7 +5,8 @@
 /* BACKGROUND COLORS */
 body,
 .my-projects .cta,
-header {
+header,
+.wp-block-button__link {
     background-color: var(--color-black);
 }
 
@@ -22,20 +23,20 @@ header {
 }
 
 article {
-    background-color: var(--color-white);
+    background-color: var(--color-grey-light);
 }
 
 /* TEXT COLOR */
 body,
 header a,
 .fa-github,
-.contact a {
+.contact a,
+.wp-block-button__link {
     color: var(--color-white);
 }
 
 .about-text .cta,
-.my-projects,
-.my-projects a {
+.my-projects {
     color: var(--color-black);
 }
 
@@ -60,6 +61,12 @@ nav a,
 .about-me,
 .contact {
     scroll-margin-top: 89px;
+}
+
+.logo,
+nav,
+section {
+    border-bottom: 4px solid var(--color-orange);
 }
 
 /*testing */
