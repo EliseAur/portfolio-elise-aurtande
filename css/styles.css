@@ -63,6 +63,14 @@ nav a,
     scroll-margin-top: 89px;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    padding-bottom: 135px;
+}
+
 .logo,
 nav,
 section {
