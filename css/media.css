@@ -28,11 +28,14 @@
     .about-me {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 615px;
+        padding-bottom: 0;
     }
 
     .about-image {
         grid-column: 2;
         max-width: 685px;
+        margin-top: 37px;
     }
 
     .about-text {
@@ -78,9 +81,9 @@
         max-width: 1200px;
     }
 
-    .about-me {
+    /* .about-me {
         padding-bottom: 75px;
-    }
+    } */
 
     .my-projects h2 {
         text-align: center;
@@ -101,6 +104,10 @@
 
     .about-text {
         max-width: 500px;
+    }
+
+    .about-image {
+        margin-top: 0;
     }
 
     .contact .boxes {

@@ -107,8 +107,11 @@ article,
 }
 
 article {
-    box-shadow: 0 0 3px 3px #0000003b;
-    background: linear-gradient(8deg, var(--color-orange) 10%, var(--color-grey-light) 10%);
+    /* box-shadow: 0 0 3px 3px #0000003b;
+    /* background: linear-gradient(8deg, var(--color-orange) 10%, var(--color-grey-light) 10%); */
+    /* background: linear-gradient(8deg, var(--color-orange) 10%, var(--color-grey-light) 30%, var(--color-grey-dark) 80%); */
+    box-shadow: 0 2px 0 0 black, 0 4px 0 0 black, 0 4px 0 0 black;
+    border: 3px solid black;
 }
 
 .cta-box {

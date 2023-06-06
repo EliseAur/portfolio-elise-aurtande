@@ -26,7 +26,49 @@ article {
     background-color: var(--color-grey-light);
 }
 
+/* footer {
+    background: linear-gradient(8deg, var(--color-orange) 30%, var(--color-grey-light) 60%, var(--color-grey-dark) 100%);
+} */
+
+.my-projects,
+footer {
+    background-image: linear-gradient(
+        45deg,
+        var(--color-orange) 16.666%,
+        var(--color-grey-light) 16.666%,
+        var(--color-grey-light) 33.333%,
+        var(--color-grey-dark) 33.333%,
+        var(--color-grey-dark) 50%,
+        var(--color-orange) 50%,
+        var(--color-orange) 66.666%,
+        var(--color-grey-light) 66.666%,
+        var(--color-grey-light) 83.333%,
+        var(--color-grey-dark) 83.333%
+    );
+}
+
 /* TEXT COLOR */
+
+.font-headings-text {
+    background-image: linear-gradient(
+        45deg,
+        var(--color-orange) 16.666%,
+        var(--color-grey-light) 16.666%,
+        var(--color-grey-light) 33.333%,
+        var(--color-grey-dark) 33.333%,
+        var(--color-grey-dark) 50%,
+        var(--color-orange) 50%,
+        var(--color-orange) 66.666%,
+        var(--color-grey-light) 66.666%,
+        var(--color-grey-light) 83.333%,
+        var(--color-grey-dark) 83.333%
+    );
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body,
 header a,
 .fa-github,
@@ -36,7 +78,8 @@ header a,
 }
 
 .about-text .cta,
-.my-projects {
+.my-projects,
+footer {
     color: var(--color-black);
 }
 
