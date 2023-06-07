@@ -1,15 +1,16 @@
 /* Font- family */
-.logo,
+
+.cta,
+a {
+    font-family: var(--font-links);
+}
+
+.logo a,
 .font-headings-text,
 h1,
 h2,
 h3 {
     font-family: var(--font-headings);
-}
-
-.cta,
-a {
-    font-family: var(--font-links);
 }
 
 .nav-menu a,
@@ -21,15 +22,12 @@ article ul {
 }
 
 /* Font-sizing */
-.logo {
-    font-size: 1.7em;
-}
-
 nav a {
     font-size: 1.5em;
 }
 
-.hamburger-icon {
+.hamburger-icon,
+.logo {
     font-size: 2em;
 }
 
@@ -67,7 +65,9 @@ h2 {
 }
 
 /* Font styles/decoration */
-
+.logo a {
+    font-style: italic;
+}
 .font-headings-text,
 h2 {
     text-transform: uppercase;

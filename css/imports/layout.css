@@ -19,8 +19,15 @@ header {
     top: 0;
 }
 
+header,
+nav {
+    height: 85px;
+}
+
 .logo {
-    padding: 25px 10px 25px 15px;
+    height: 85px;
+    padding: 16px 0 0 15px;
+    box-sizing: border-box;
 }
 
 .logo a {
@@ -36,7 +43,7 @@ header {
 
 .hamburger {
     position: absolute;
-    top: 29px;
+    top: 25px;
     right: 31px;
     background: 0;
     border: 0;
@@ -59,6 +66,11 @@ nav a {
 }
 
 /* Padding, margin, borders */
+
+header {
+    border-bottom: 4px solid var(--color-black);
+}
+
 section {
     margin: 0 auto;
 }
@@ -79,6 +91,7 @@ h2 {
 
 .about-image {
     padding: 0 0 0 10px;
+    padding: 10px 10px 0 0;
 }
 
 .top-level,
@@ -164,6 +177,7 @@ article .image {
 footer p {
     text-align: center;
     padding: 30px;
+    font-weight: bolder;
 }
 
 /* article */
