@@ -10,11 +10,12 @@ header,
     background-color: var(--color-black);
 }
 
-.nav {
+nav {
     background-color: var(--color-black-opacity);
 }
 
-.about-text .cta {
+.about-text .cta,
+nav a:hover {
     background-color: var(--color-orange);
 }
 
@@ -62,7 +63,9 @@ body,
 header a,
 .fa-github,
 .contact a,
-.wp-block-button__link {
+.wp-block-button__link,
+.my-projects .cta,
+nav a {
     color: var(--color-white);
 }
 
@@ -71,18 +74,16 @@ header a,
 footer,
 .fa-bars,
 .fa-times,
-.logo a {
-    color: var(--color-black);
-}
-
-.my-projects .cta,
-nav a {
-    color: var(--color-white);
-}
-
+.logo a,
 nav a:hover {
-    background: var(--color-orange);
     color: var(--color-black);
+}
+
+.email:hover,
+.github-link:hover,
+.contact-box a:hover,
+.contact-box a i:hover {
+    color: var(--color-orange);
 }
 
 .hamburger,

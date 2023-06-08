@@ -68,6 +68,7 @@ h2 {
 .logo a {
     font-style: italic;
 }
+
 .font-headings-text,
 h2 {
     text-transform: uppercase;
@@ -94,15 +95,12 @@ article a:hover,
     line-height: 1.5;
 }
 
-.email:hover,
-.github-link:hover {
-    /* text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.2rem; */
-    color: var(--color-orange);
+.loading-message {
+    text-align: center;
+    font-weight: bold;
 }
 
-.contact-box a:hover,
-.contact-box a i:hover {
-    color: var(--color-orange);
+nav a,
+footer p {
+    text-align: center;
 }
