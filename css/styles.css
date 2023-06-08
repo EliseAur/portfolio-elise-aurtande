@@ -7,34 +7,18 @@
     padding: 0;
 }
 
+/* Header, navigation */
 .logo,
 .cta {
     box-sizing: border-box;
 }
 
-img,
-nav {
-    width: 100%;
-}
-
-nav a,
-.text a,
-.show {
-    display: block;
-}
-
-.contact,
-.contact-box,
-.wp-block-buttons {
-    display: flex;
-}
-
-/* HEADER and navigation */
 header {
     position: sticky;
     left: 0;
     top: 0;
     z-index: 1;
+    border-bottom: 4px solid var(--color-black);
 }
 
 header,
@@ -74,28 +58,9 @@ nav a {
     transition: 0.5s;
 }
 
-/* Padding, margin, borders, position etc. */
-
-header {
-    border-bottom: 4px solid var(--color-black);
-}
-
-section,
-.boxes {
-    margin: 0 auto;
-}
-
-.boxes {
-    max-width: 400px;
-    padding: 15px;
-}
-
+/* About me section */
 .about-me {
     padding-bottom: 80px;
-}
-
-h2 {
-    margin-bottom: 15px;
 }
 
 .about-image {
@@ -112,29 +77,14 @@ h2 {
     margin: 10px 0;
 }
 
-.cta {
-    padding: 10px 60px 13px;
-    width: 180px;
-}
-
+/* My Projects Section */
 .wp-block-button__link {
     padding: 10px 35px;
-}
-
-.cta,
-article,
-.wp-block-button__link {
-    border-radius: 25px;
 }
 
 article {
     box-shadow: 0 2px 0 0 black, 0 4px 0 0 black, 0 4px 0 0 black;
     border: 3px solid black;
-}
-
-.cta-box,
-.contact-box {
-    margin: 20px 0;
 }
 
 .my-projects .cta-box {
@@ -162,6 +112,22 @@ article .image {
     border-radius: 20px 20px 0 0;
 }
 
+.all-projects-box {
+    display: grid;
+    gap: 25px;
+}
+
+.wp-block-buttons {
+    gap: 10px;
+    margin: 20px auto;
+    width: 271px;
+}
+
+.wp-block-group {
+    height: 50px;
+}
+
+/* Contact Section */
 .contact {
     height: 500px;
     padding-bottom: 135px;
@@ -179,19 +145,52 @@ footer p {
     padding: 30px;
 }
 
-.all-projects-box {
-    display: grid;
-    gap: 25px;
+/* Shared Styles */
+img,
+nav {
+    width: 100%;
 }
 
+nav a,
+.text a,
+.show {
+    display: block;
+}
+
+.contact,
+.contact-box,
 .wp-block-buttons {
-    gap: 10px;
-    margin: 20px auto;
-    width: 271px;
+    display: flex;
 }
 
-.wp-block-group {
-    height: 50px;
+section,
+.boxes {
+    margin: 0 auto;
+}
+
+.boxes {
+    max-width: 400px;
+    padding: 15px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.cta {
+    padding: 10px 60px 13px;
+    width: 180px;
+}
+
+.cta,
+article,
+.wp-block-button__link {
+    border-radius: 25px;
+}
+
+.cta-box,
+.contact-box {
+    margin: 20px 0;
 }
 
 .hamburger,
@@ -207,13 +206,7 @@ nav a,
     scroll-margin-top: 85px;
 }
 
-/* .contact {
-    justify-content: center;
-    flex-direction: column;
-    height: 600px;
-} */
-
-/* Loader */
+/* Loader-styling */
 .loading-box,
 .loader {
     margin: 40px auto;
