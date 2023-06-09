@@ -11,7 +11,7 @@ nav {
 }
 
 .about-text .cta,
-nav a:hover {
+.nav-menu a:hover {
     background-color: var(--color-orange);
 }
 
