@@ -1,7 +1,8 @@
+/* BACKGROUND COLORS */
 body,
-header,
 .my-projects .cta,
-.wp-block-button__link {
+.wp-block-button__link,
+.logo {
     background-color: var(--color-black);
 }
 
@@ -22,10 +23,11 @@ article {
     background-color: var(--color-grey-light);
 }
 
+header,
 .my-projects,
 footer,
-.logo,
-.font-headings-text {
+.font-headings-text,
+.logo a {
     background-image: linear-gradient(
         45deg,
         var(--color-orange) 16.666%,
@@ -41,7 +43,8 @@ footer,
     );
 }
 
-.font-headings-text {
+.font-headings-text,
+.logo a {
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -51,6 +54,9 @@ footer,
 /* TEXT COLOR */
 body,
 header a,
+.logo a,
+.fa-bars,
+.fa-times,
 .fa-github,
 .contact a,
 .wp-block-button__link,
@@ -62,9 +68,6 @@ nav a {
 .about-text .cta,
 .my-projects,
 footer,
-.fa-bars,
-.fa-times,
-.logo a,
 nav a:hover {
     color: var(--color-black);
 }

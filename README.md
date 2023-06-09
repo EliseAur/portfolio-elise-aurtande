@@ -14,3 +14,5 @@ Links and cta:
 font-family: "tablet-gothic", sans-serif;
 font-weight: 600;
 font-style: normal;
+
+Consider making the .logo background black in mobile view and change it to gradient after 810px.

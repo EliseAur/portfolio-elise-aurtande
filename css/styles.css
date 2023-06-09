@@ -18,10 +18,9 @@ header {
     left: 0;
     top: 0;
     z-index: 1;
-    border-bottom: 4px solid var(--color-black);
+    height: 89px;
 }
 
-header,
 nav,
 .logo {
     height: 85px;
